@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>LatteGarden — меню</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="menu_styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+ <header class="menu-page-header">
+  <nav class="nav nav--menu">
+    <a class="logo" href="index.html">lattegarden</a>
+
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartOpen" aria-label="Открыть корзину">
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="theme-btn" id="themeToggle" aria-label="Переключить тему">☾</button>
+    </div>
+  </nav>
+
+  <!-- ВЫБОР КОФЕЙНИ -->
+  <div class="menu-cafe">
+    <h1 class="menu-cafe__title" id="cafeTitle">Кофейня</h1>
+
+    <button class="menu-cafe__pill" id="openCafeSelect" type="button">
+      <span class="menu-cafe__pill-icon">🕒</span>
+      <span class="menu-cafe__pill-text" id="cafeStatus">Открыто до 22:00</span>
+      <span class="menu-cafe__pill-arrow">›</span>
+    </button>
+  </div>
+
+  <!-- ПЕРЕКЛЮЧАТЕЛЬ КОФЕЕН -->
+  <div class="cafe-switch" id="cafeSwitch">
+    <button class="cafe-chip" data-id="center">Центр</button>
+    <button class="cafe-chip" data-id="south">Южный</button>
+    <button class="cafe-chip" data-id="north">Северный</button>
+  </div>
+</header>
+<section class="section" id="menu">
+  <h2 class="section-title">Меню</h2>
+  <p class="section-subtitle">
+    Классические и авторские напитки, десерты — всё, что нужно для уютной паузы.
+  </p>
+  <div class="menu-filters">
+    <button class="filter-btn active" data-category="all">все</button>
+    <button class="filter-btn" data-category="coffee">кофе</button>
+    <button class="filter-btn" data-category="dessert">десерты</button>
+    <button class="filter-btn" data-category="special">спешл</button>
+  </div>
+  <div class="menu-card-grid">
+    <!-- Кофе -->
+    <!-- Десерты -->
+    <!-- Спешлы -->
+    <article class="menu-card-v2" data-category="coffee" data-id="американо">
+      <div class="menu-card-img">
+        <img alt="Американо" src="imgs/menu-ameri.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Американо</h3>
+        <p class="menu-desc">Чистый вкус кофе — эспрессо, разбавленный горячей водой.</p>
+        <div class="menu-card-footer">
+          <span class="price">240 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="ванильныи-раф">
+      <div class="menu-card-img">
+        <img alt="Ванильный раф" src="imgs/menu-raf.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Ванильный раф</h3>
+        <p class="menu-desc">Сливочный кофейный напиток с ванилью, который напоминает десерт в чашке.</p>
+        <div class="menu-card-footer">
+          <span class="price">360 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="капучино">
+      <div class="menu-card-img">
+        <img alt="Капучино" src="imgs/menu-capuc.jpg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Капучино</h3>
+        <p class="menu-desc">Классика: эспрессо, тёплое молоко и плотная пенка.</p>
+        <div class="menu-card-footer">
+          <span class="price">300 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="классическии-латте">
+      <div class="menu-card-img">
+        <img alt="Классический латте" src="imgs/menu-latte.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Классический латте</h3>
+        <p class="menu-desc">Мягкий эспрессо с молоком и нежной пенкой.</p>
+        <div class="menu-card-footer">
+          <span class="price">320 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="мокка">
+      <div class="menu-card-img">
+        <img alt="Мокка" src="imgs/menu-mokkoo.jpg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Мокка</h3>
+        <p class="menu-desc">Кофе с шоколадом и молоком — сладко и насыщенно.</p>
+        <div class="menu-card-footer">
+          <span class="price">370 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="флэт-уаит">
+      <div class="menu-card-img">
+        <img alt="Флэт уайт" src="imgs/menu-flatwhite.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Флэт уайт</h3>
+        <p class="menu-desc">Более насыщенный вкус эспрессо и шелковистая текстура молока для тех, кто любит покрепче.</p>
+        <div class="menu-card-footer">
+          <span class="price">340 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="coffee" data-id="эспрессо">
+      <div class="menu-card-img">
+        <img alt="Эспрессо" src="imgs/menu-espresso.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Эспрессо</h3>
+        <p class="menu-desc">Бодрый и насыщенный — основа большинства кофейных напитков.</p>
+        <div class="menu-card-footer">
+          <span class="price">220 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="dessert" data-id="брауни">
+      <div class="menu-card-img">
+        <img alt="Брауни" src="imgs/menu-brownie.jpg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Брауни</h3>
+        <p class="menu-desc">Шоколадный плотный десерт с влажной серединкой.</p>
+        <div class="menu-card-footer">
+          <span class="price">260 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="dessert" data-id="булочка-с-корицеи">
+      <div class="menu-card-img">
+        <img alt="Булочка с корицей" src="imgs/menu-cinnamon.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Булочка с корицей</h3>
+        <p class="menu-desc">Свежая булочка с корицей и глазурью — идеальная пара к латте.</p>
+        <div class="menu-card-footer">
+          <span class="price">210 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="dessert" data-id="круассан">
+      <div class="menu-card-img">
+        <img alt="Круассан" src="imgs/menu-croissant.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Круассан</h3>
+        <p class="menu-desc">Слоёная выпечка с хрустящей корочкой.</p>
+        <div class="menu-card-footer">
+          <span class="price">190 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="dessert" data-id="тирамису">
+      <div class="menu-card-img">
+        <img alt="Тирамису" src="imgs/menu-tiramisu.jpg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Тирамису</h3>
+        <p class="menu-desc">Нежный десерт с кофе и какао.</p>
+        <div class="menu-card-footer">
+          <span class="price">330 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="dessert" data-id="чизкеик">
+      <div class="menu-card-img">
+        <img alt="Чизкейк" src="imgs/menu-cheesecake.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Чизкейк</h3>
+        <p class="menu-desc">Лёгкий ванильный чизкейк с хрустящей основой и мягким кремовым слоем.</p>
+        <div class="menu-card-footer">
+          <span class="price">280 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="имбирный-раф">
+      <div class="menu-card-img">
+        <img alt="Имбирный раф" src="imgs/menu-imbir.jpeg"/>
+        <span class="menu-badge">Сезонное</span>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Имбирный раф</h3>
+        <p class="menu-desc">Сезонный раф со сливочной текстурой и имбирными нотами.</p>
+        <div class="menu-card-footer">
+          <span class="price">440 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="клюквенный-капучино">
+      <div class="menu-card-img">
+        <img alt="Капучино клюквенный мёдок" src="imgs/menu-medok.jpg"/>
+        <span class="menu-badge">Сезонное</span>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Капучино клюквенный мёдок</h3>
+        <p class="menu-desc">Яркий сезонный капучино с клюквой и мёдом.</p>
+        <div class="menu-card-footer">
+          <span class="price">430 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="тыквенный-латте">
+      <div class="menu-card-img">
+        <img alt="Тыквенный латте" src="imgs/menu-pumpkin.jpeg"/>
+        <span class="menu-badge">Сезонное</span>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Тыквенный латте</h3>
+        <p class="menu-desc">Сезонный латте с пряностями и тыквенным сиропом.</p>
+        <div class="menu-card-footer">
+          <span class="price">420 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="апельсиновыи-раф">
+      <div class="menu-card-img">
+        <img alt="Апельсиновый раф" src="imgs/menu-orange.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Апельсиновый раф</h3>
+        <p class="menu-desc">Сливочный кофейный напиток с лёгкой цитрусовой ноткой и ярким ароматом.</p>
+        <div class="menu-card-footer">
+          <span class="price">380 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="колд-брю">
+      <div class="menu-card-img">
+        <img alt="Колд брю" src="imgs/menu-cold.jpeg"/>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Колд брю</h3>
+        <p class="menu-desc">Холодный кофе, настоянный долгим методом на холодной воде. Мягкий и освежающий.</p>
+        <div class="menu-card-footer">
+          <span class="price">390 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+    <article class="menu-card-v2" data-category="special" data-id="матча-латте">
+      <div class="menu-card-img">
+        <img alt="Матча латте" src="imgs/menu-matcha.webp"/>
+        <span class="menu-badge">Спешл</span>
+      </div>
+      <div class="menu-card-content">
+        <h3 class="menu-title">Матча латте</h3>
+        <p class="menu-desc">Зелёный чай матча с молоком — мягко и бодро.</p>
+        <div class="menu-card-footer">
+          <span class="price">390 ₽</span>
+          <button class="order-btn-v2" type="button">Выбрать</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- ===== МОДАЛКА ТОВАРА ===== -->
+<div aria-hidden="true" class="product-modal" id="productModal">
+  <div class="product-modal__backdrop" data-close="1">
+  </div>
+  <div aria-labelledby="pmTitle" aria-modal="true" class="product-modal__panel" role="dialog">
+    <button aria-label="Закрыть" class="product-modal__close" data-close="1" type="button">×</button>
+    <div class="pm">
+      <div class="pm__media">
+        <img alt="" id="pmImg" src=""/>
+      </div>
+      <div class="pm__content">
+        <p class="pm__kicker" id="pmKicker">Кофе</p>
+        <h2 class="pm__title" id="pmTitle">Товар</h2>
+        <p class="pm__desc" id="pmDesc">Описание</p>
+        <p class="pm__meta">
+          <strong>Состав: </strong>
+          <span id="pmComposition">
+          </span>
+        </p>
+        <p class="pm__meta" id="pmCaloriesWrap">
+          <strong>Калорийность: </strong>
+          <span id="pmCalories">
+          </span> ккал</p>
+          <div class="pm__group" id="pmSizeGroup">
+            <div class="pm__label">Размер</div>
+            <div aria-label="Выбор размера" class="pm__seg" role="radiogroup">
+              <button class="pm__seg-btn active" data-size="S" type="button">S</button>
+              <button class="pm__seg-btn" data-size="M" type="button">M</button>
+              <button class="pm__seg-btn" data-size="L" type="button">L</button>
+            </div>
+            <div class="pm__hint" id="pmSizeHint">Объём: <span id="pmMl">250</span> мл</div>
+          </div>
+          <div class="pm__group" id="pmMilkGroup">
+            <div class="pm__label">Молоко</div>
+            <div aria-label="Выбор молока" class="pm__chips" role="radiogroup">
+              <button class="pm__chip active" data-milk="Обычное" type="button">Обычное</button>
+              <button class="pm__chip" data-milk="Овсяное" type="button">Овсяное</button>
+              <button class="pm__chip" data-milk="Миндальное" type="button">Миндальное</button>
+              <button class="pm__chip" data-milk="Безлактозное" type="button">Безлактозное</button>
+            </div>
+            <div class="pm__hint">Растительное +40 ₽</div>
+          </div>
+          <div class="pm__footer">
+            <div class="pm__price">
+              <div class="pm__price-label">Цена</div>
+              <div class="pm__price-val">
+                <span id="pmPrice">0</span> ₽</div>
+              </div>
+              <button class="order-btn-v2 pm__add" id="pmAddBtn" type="button">Добавить к заказу</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== КОРЗИНА (ТОЛЬКО В МЕНЮ) ===== -->
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer__backdrop" data-cart-close="1"></div>
+
+  <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-drawer__head">
+      <div>
+        <h3 id="cartTitle">Ваш заказ</h3>
+
+        <div class="cart-cafe-line">
+          Заказ для: <strong id="cartCafeName"></strong>
+        </div>
+      </div>
+
+      <button class="cart-drawer__close" type="button" aria-label="Закрыть корзину" data-cart-close="1">
+        ×
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-total">
+        <span>Итого</span>
+        <strong><span id="cartTotal">0</span> ₽</strong>
+      </div>
+
+      <div class="checkout-field">
+        <label for="checkoutPhone">Номер телефона</label>
+        <input type="tel" id="checkoutPhone" placeholder="+7 (___) ___-__-__" />
+        <small class="checkout-hint" id="phoneHint">
+          Введите номер, чтобы мы могли связаться с вами
+        </small>
+      </div>
+
+      <button class="main-btn cart-checkout" id="cartCheckout" type="button">Оформить</button>
+      <button class="ghost-btn cart-clear" id="cartClear" type="button">Очистить</button>
+    </div>
+  </div>
+</aside>
+  <script src="menu_script.js">
+  </script>
+  <!-- УВЕДОМЛЕНИЕ О ЗАКАЗЕ -->
+  <div class="order-toast" id="orderToast" hidden>
+    ✅ Заказ принят! Мы скоро свяжемся с вами.
+  </div>
+</body>
+</html>

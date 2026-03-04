@@ -1,0 +1,393 @@
+{
+  "products": [
+    {
+      "id": "классическии-латте",
+      "category": "coffee",
+      "title": "Классический латте",
+      "desc": "Мягкий эспрессо с молоком и нежной пенкой.",
+      "img": "imgs/menu-latte.jpeg",
+      "basePrice": 320,
+      "composition": "Эспрессо, молоко.",
+      "calories": {
+        "S": 140,
+        "M": 175,
+        "L": 210
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "флэт-уаит",
+      "category": "coffee",
+      "title": "Флэт уайт",
+      "desc": "Более насыщенный вкус эспрессо и шелковистая текстура молока для тех, кто любит покрепче.",
+      "img": "imgs/menu-flatwhite.jpeg",
+      "basePrice": 340,
+      "composition": "Двойной эспрессо, молоко.",
+      "calories": {
+        "S": 140,
+        "M": 175,
+        "L": 210
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "ванильныи-раф",
+      "category": "coffee",
+      "title": "Ванильный раф",
+      "desc": "Сливочный кофейный напиток с ванилью, который напоминает десерт в чашке.",
+      "img": "imgs/menu-raf.jpeg",
+      "basePrice": 360,
+      "composition": "Эспрессо, сливки, ванильный сироп.",
+      "calories": {
+        "S": 140,
+        "M": 175,
+        "L": 210
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "эспрессо",
+      "category": "coffee",
+      "title": "Эспрессо",
+      "desc": "Бодрый и насыщенный — основа большинства кофейных напитков.",
+      "img": "imgs/menu-espresso.jpeg",
+      "basePrice": 220,
+      "composition": "Эспрессо.",
+      "calories": {
+        "S": 70,
+        "M": 88,
+        "L": 105
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "чизкеик",
+      "category": "dessert",
+      "title": "Чизкейк",
+      "desc": "Лёгкий ванильный чизкейк с хрустящей основой и мягким кремовым слоем.",
+      "img": "imgs/menu-cheesecake.jpeg",
+      "basePrice": 280,
+      "composition": "См. описание продукта.",
+      "calories": null,
+      "milkCaloriesExtra": null,
+      "cafes": [
+        "center",
+        "south"
+      ]
+    },
+    {
+      "id": "булочка-с-корицеи",
+      "category": "dessert",
+      "title": "Булочка с корицей",
+      "desc": "Свежая булочка с корицей и глазурью — идеальная пара к латте.",
+      "img": "imgs/menu-cinnamon.jpeg",
+      "basePrice": 210,
+      "composition": "См. описание продукта.",
+      "calories": null,
+      "milkCaloriesExtra": null,
+      "cafes": [
+        "center",
+        "south"
+      ]
+    },
+    {
+      "id": "апельсиновыи-раф",
+      "category": "special",
+      "title": "Апельсиновый раф",
+      "desc": "Сливочный кофейный напиток с лёгкой цитрусовой ноткой и ярким ароматом.",
+      "img": "imgs/menu-orange.jpeg",
+      "basePrice": 380,
+      "composition": "Эспрессо, сливки, ванильный сироп.",
+      "calories": {
+        "S": 140,
+        "M": 175,
+        "L": 210
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "south"
+      ]
+    },
+    {
+      "id": "колд-брю",
+      "category": "special",
+      "title": "Колд брю",
+      "desc": "Холодный кофе, настоянный долгим методом на холодной воде. Мягкий и освежающий.",
+      "img": "imgs/menu-cold.jpeg",
+      "basePrice": 390,
+      "composition": "Кофе, вода (холодная экстракция).",
+      "calories": {
+        "S": 140,
+        "M": 175,
+        "L": 210
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "south"
+      ]
+    },
+    {
+      "id": "капучино",
+      "category": "coffee",
+      "title": "Капучино",
+      "desc": "Классика: эспрессо, тёплое молоко и плотная пенка.",
+      "img": "imgs/menu-capuc.jpg",
+      "basePrice": 300,
+      "composition": "Эспрессо, молоко.",
+      "calories": {
+        "S": 110,
+        "M": 150,
+        "L": 190
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "американо",
+      "category": "coffee",
+      "title": "Американо",
+      "desc": "Чистый вкус кофе — эспрессо, разбавленный горячей водой.",
+      "img": "imgs/menu-ameri.jpeg",
+      "basePrice": 240,
+      "composition": "Эспрессо, вода.",
+      "calories": {
+        "S": 15,
+        "M": 20,
+        "L": 25
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 0,
+        "Миндальное": 0
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "мокка",
+      "category": "coffee",
+      "title": "Мокка",
+      "desc": "Кофе с шоколадом и молоком — сладко и насыщенно.",
+      "img": "imgs/menu-mokkoo.jpg",
+      "basePrice": 370,
+      "composition": "Эспрессо, молоко, шоколад.",
+      "calories": {
+        "S": 190,
+        "M": 240,
+        "L": 300
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 15,
+        "Миндальное": 10
+      },
+      "cafes": [
+        "center",
+        "south",
+        "north"
+      ]
+    },
+    {
+      "id": "тирамису",
+      "category": "dessert",
+      "title": "Тирамису",
+      "desc": "Нежный десерт с кофе и какао.",
+      "img": "imgs/menu-tiramisu.jpg",
+      "basePrice": 330,
+      "composition": "Маскарпоне, яйца, савоярди, кофе, какао, сахар.",
+      "cafes": [
+        "center",
+        "south"
+      ]
+    },
+    {
+      "id": "брауни",
+      "category": "dessert",
+      "title": "Брауни",
+      "desc": "Шоколадный плотный десерт с влажной серединкой.",
+      "img": "imgs/menu-brownie.jpg",
+      "basePrice": 260,
+      "composition": "Шоколад, масло, яйца, мука, сахар, какао.",
+      "cafes": [
+        "center",
+        "south"
+      ]
+    },
+    {
+      "id": "круассан",
+      "category": "dessert",
+      "title": "Круассан",
+      "desc": "Слоёная выпечка с хрустящей корочкой.",
+      "img": "imgs/menu-croissant.jpeg",
+      "basePrice": 190,
+      "composition": "Мука, масло, дрожжи, сахар, соль.",
+      "cafes": [
+        "center",
+        "south"
+      ]
+    },
+    {
+      "id": "тыквенный-латте",
+      "category": "special",
+      "title": "Тыквенный латте",
+      "desc": "Сезонный латте с пряностями и тыквенным сиропом.",
+      "img": "imgs/menu-pumpkin.jpeg",
+      "basePrice": 420,
+      "composition": "Эспрессо, молоко, тыквенный сироп, специи.",
+      "badge": "Сезонное",
+      "subCategory": "seasonal",
+      "calories": {
+        "S": 210,
+        "M": 270,
+        "L": 330
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center"
+      ]
+    },
+    {
+      "id": "имбирный-раф",
+      "category": "special",
+      "title": "Имбирный раф",
+      "desc": "Сезонный раф со сливочной текстурой и имбирными нотами.",
+      "img": "imgs/menu-imbir.jpeg",
+      "basePrice": 440,
+      "composition": "Эспрессо, сливки/молоко, сахар, имбирный сироп.",
+      "badge": "Сезонное",
+      "subCategory": "seasonal",
+      "calories": {
+        "S": 240,
+        "M": 310,
+        "L": 380
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "center"
+      ]
+    },
+    {
+      "id": "клюквенный-капучино",
+      "category": "special",
+      "title": "Капучино клюквенный мёдок",
+      "desc": "Яркий сезонный капучино с клюквой и мёдом.",
+      "img": "imgs/menu-medok.jpg",
+      "basePrice": 430,
+      "composition": "Эспрессо, молоко, клюквенный сироп, мёд.",
+      "badge": "Сезонное",
+      "subCategory": "seasonal",
+      "calories": {
+        "S": 200,
+        "M": 260,
+        "L": 320
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "south"
+      ]
+    },
+    {
+      "id": "матча-латте",
+      "category": "special",
+      "title": "Матча латте",
+      "desc": "Зелёный чай матча с молоком — мягко и бодро.",
+      "img": "imgs/menu-matcha.webp",
+      "basePrice": 390,
+      "composition": "Матча, молоко.",
+      "badge": "Спешл",
+      "calories": {
+        "S": 160,
+        "M": 210,
+        "L": 260
+      },
+      "milkCaloriesExtra": {
+        "Обычное": 0,
+        "Безлактозное": 0,
+        "Овсяное": 20,
+        "Миндальное": 15
+      },
+      "cafes": [
+        "south"
+      ]
+    }
+  ]
+}

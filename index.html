@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>LatteGarden — уютная кофейня</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Шрифты и стили -->
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Кнопка "наверх" -->
+<button aria-label="Наверх" class="top-btn" id="topBtn">↑</button>
+<!-- ===== ШАПКА / HERO ===== -->
+<header class="hero section" id="top">
+<nav class="nav">
+<div class="logo">lattegarden</div>
+<button aria-label="Открыть меню" class="menu-toggle">☰</button>
+<ul class="nav-links">
+<li><a href="#about">о нас</a></li>
+<li><a href="#cafes">кофейни</a></li>
+<li><a href="#gallery">галерея</a></li>
+<li><a href="#contact">контакты</a></li>
+</ul>
+<button aria-label="Переключить тему" class="theme-btn" id="themeToggle">☾</button>
+</nav>
+<div class="hero-content">
+<div class="hero-text">
+<p class="hero-kicker">уютная кофейня в центре города</p>
+<h1>
+          Latte<span>Garden</span><br/>
+          место, где кофе — <br/> маленький ритуал
+        </h1>
+<p class="hero-sub">
+           Мы создаём атмосферу тепла и спокойствия, сочетая природу, уют и тщательно приготовленный кофе.
+        </p>
+<div class="hero-buttons">
+<button class="main-btn" onclick="document.querySelector('#cafes').scrollIntoView({behavior:'smooth'})">
+            Смотреть меню
+          </button>
+<button class="ghost-btn" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">
+            Узнать о нас
+          </button>
+</div>
+</div>
+</div>
+</header>
+<!-- ===== О НАС ===== -->
+<section class="section" id="about">
+<div class="about-grid">
+<div class="about-text">
+<p class="about-label">// о кофейне</p>
+<h2 class="section-title">LatteGarden — живая кофейня</h2>
+<p class="section-subtitle">
+          Небольшое место, где многое строится вокруг одной простой вещи — вкусной чашки кофе.
+        </p>
+<p class="about-main">
+          LatteGarden — это уютная кофейня, спрятанная от городского шума. Мы верим, что
+          кофе — это не просто напиток, а маленький ежедневный ритуал, который делает
+          день теплее. Мы обжариваем зёрна малыми партиями, аккуратно настраиваем
+          помол и температуру, а напитки готовим вручную.
+        </p>
+<p class="about-sub">
+          Внутри кофейни — мягкий свет, деревянные столы, несколько мест у окна
+          и негромкая музыка. Здесь можно поработать, встретиться с друзьями или
+          просто взять кофе с собой по дороге.
+        </p>
+<div class="about-tech-block">
+<p class="about-label">// что мы ценим</p>
+<div class="tech-badges">
+<span class="tech-badge">свежая обжарка</span>
+<span class="tech-badge">натуральные ингредиенты</span>
+<span class="tech-badge">уют и внимание к деталям</span>
+<span class="tech-badge">теплое общение</span>
+</div>
+<p class="about-sub">
+            Для нас важно, чтобы каждое посещение LatteGarden было маленькой паузой,
+            после которой хочется улыбнуться.
+          </p>
+</div>
+<div class="about-facts">
+<p class="about-label">// почему к нам возвращаются</p>
+<ul class="check-list">
+<li>стабильный вкус и аккуратная подача напитков</li>
+<li>атмосфера, в которой приятно задержаться</li>
+<li>десерты и выпечка от местных кондитеров</li>
+<li>доброжелательные бариста</li>
+</ul>
+</div>
+</div>
+<div class="about-photo">
+<img alt="Интерьер кофейни LatteGarden" src="imgs/gallery-3.jpeg"/>
+</div>
+</div>
+</section>
+<!-- ===== КОФЕЙНИ ===== -->
+<section class="section cafes-section" id="cafes">
+  <div class="cafes-head">
+    <h2 class="section-title">Кофейни</h2>
+    <p class="section-subtitle">
+      Выберите удобную точку в Хабаровске — и откройте меню именно для неё.
+    </p>
+  </div>
+
+  <div class="cafes-hero">
+    <button class="cafes-hero__nav cafes-hero__nav--prev" type="button" aria-label="Предыдущее фото">‹</button>
+    <img class="cafes-hero__img" id="cafesHeroImg" src="imgs/gallery-3.jpeg" alt="Интерьер LatteGarden">
+    <button class="cafes-hero__nav cafes-hero__nav--next" type="button" aria-label="Следующее фото">›</button>
+  </div>
+
+  <div class="cafes-grid">
+    <article class="cafe-card" data-cafe="center">
+      <h3 class="cafe-card__title">Муравьёва‑Амурского, 25</h3>
+      <p class="cafe-card__meta">Центр · 09:00 – 20:00</p>
+      <div class="cafe-card__actions">
+        <a class="main-btn cafe-card__btn" href="menu_page.html" data-open-menu>меню</a>
+        <a class="ghost-btn cafe-card__btn" href="tel:+74212223344">позвонить</a>
+      </div>
+    </article>
+
+    <article class="cafe-card" data-cafe="south">
+      <h3 class="cafe-card__title">Краснореченская, 91</h3>
+      <p class="cafe-card__meta">Южный · 10:00 – 19:00</p>
+      <div class="cafe-card__actions">
+        <a class="main-btn cafe-card__btn" href="menu_page.html" data-open-menu>меню</a>
+        <a class="ghost-btn cafe-card__btn" href="tel:+74212224455">позвонить</a>
+      </div>
+    </article>
+
+    <article class="cafe-card" data-cafe="north">
+      <h3 class="cafe-card__title">Тихоокеанская, 170</h3>
+      <p class="cafe-card__meta">Северный · 10:00 – 19:00</p>
+      <div class="cafe-card__actions">
+        <a class="main-btn cafe-card__btn" href="menu_page.html" data-open-menu>меню</a>
+        <a class="ghost-btn cafe-card__btn" href="tel:+74212225566">позвонить</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== ГАЛЕРЕЯ ===== -->
+<section class="section gallery-modern" id="gallery">
+<h2 class="section-title">Галерея</h2>
+<p class="section-subtitle">
+    Несколько кадров из LatteGarden: атмосфера, напитки и детали, которые делают кофейню особенной.
+  </p>
+<div class="gallery-mosaic">
+<figure class="gallery-item gallery-item--wide">
+<img alt="Latte в солнечном свете" class="gallery-img" src="imgs/gallery-1.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">Утренний свет</span>
+<span class="gallery-caption-sub">латте и мягкий солнечный луч</span>
+</figcaption>
+</figure>
+<figure class="gallery-item gallery-item--tall">
+<img alt="Бариста за работой" class="gallery-img" src="imgs/gallery-2.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">За барной стойкой</span>
+<span class="gallery-caption-sub">каждый напиток собирается вручную</span>
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img alt="Интерьер кофейни" class="gallery-img" src="imgs/gallery-3.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">Интерьер</span>
+<span class="gallery-caption-sub">тихие столики у окна</span>
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img alt="Десерты" class="gallery-img" src="imgs/gallery-4.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">Десертная витрина</span>
+<span class="gallery-caption-sub">чизкейк, корица и шоколад</span>
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img alt="Кофе с собой" class="gallery-img" src="imgs/gallery-5.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">С собой</span>
+<span class="gallery-caption-sub">для тех, кто спешит, но любит вкус</span>
+</figcaption>
+</figure>
+<figure class="gallery-item">
+<img alt="Уютный столик" class="gallery-img" src="imgs/gallery-6.jpeg"/>
+<figcaption class="gallery-caption">
+<span class="gallery-caption-title">Уголок для двоих</span>
+<span class="gallery-caption-sub">идеальное место для разговора</span>
+</figcaption>
+</figure>
+</div>
+</section>
+<!-- ===== КОНТАКТЫ / ФУТЕР ===== -->
+<section class="section contact-section" id="contact">
+<h2 class="section-title">Контакты</h2>
+<p class="section-subtitle">
+      Приходите в гости или напишите нам — мы рады новым и постоянным гостям.
+    </p>
+<div class="contact-wrapper">
+<div class="contact-details">
+<h3>Найдите нас</h3>
+<p>Адрес: г. Хабаровск — кофейня Latte Garden
+</p>
+<p>
+          Телефон:
+          <a class="contact-link" href="tel:+79990001122">+7 (999) 000-11-22</a>
+</p>
+<p>
+          E-mail:
+          <a class="contact-link" href="mailto:hello@lattegarden.coffee">
+            hello@lattegarden.coffee
+          </a>
+</p>
+<div class="contact-hours">
+<h4>Часы работы</h4>
+<ul>
+<li>Пн–Пт: 8:00 – 21:00</li>
+<li>Сб–Вс: 9:00 – 22:00</li>
+</ul>
+</div>
+<div class="social-links">
+<a aria-label="Telegram" class="social-icon telegram" href="#">
+<svg viewbox="0 0 24 24">
+<path d="M9.04 15.34L8.91 19.5C9.24 19.5 9.39 19.36 9.56 19.2L11.21 17.63L15.26 20.61C16 21.03 16.53 20.82 16.72 19.93L19.93 4.86C20.19 3.76 19.53 3.32 18.81 3.6L3.65 9.44C2.58 9.86 2.59 10.48 3.45 10.74L7.34 11.96L16.25 6.39C16.68 6.12 17.07 6.27 16.74 6.57L9.04 15.34Z"></path>
+</svg>
+</a>
+<a aria-label="VK" class="social-icon vk" href="#">
+<svg viewbox="0 0 24 24">
+<path d="M13.1 17.8C8 17.8 4.7 14 4.6 7H7.8C7.9 11.6 9.9 13.6 11.3 13.9V7H14.3V11.1C15.7 11 17.2 9.2 17.7 7H20.7C20.2 9.9 18.4 11.7 17.2 12.4C18.4 13 20.4 14.5 21.2 17.8H17.9C17.3 15.8 15.9 14.4 14.3 14.3V17.8H13.1Z"></path>
+</svg>
+</a>
+<a aria-label="Instagram" class="social-icon instagram" href="#">
+<svg viewbox="0 0 24 24">
+<path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3Zm0 7.7A3 3 0 1 1 12 10a3 3 0 0 1 0 6Zm6.2-7.9A1.1 1.1 0 1 1 17.1 6a1.1 1.1 0 0 1 1.1 1.1ZM12 2C7 2 3 6 3 11v2c0 5 4 9 9 9h2c5 0 9-4 9-9V11c0-5-4-9-9-9h-2Zm0 2h2c3.9 0 7 3.1 7 7v2c0 3.9-3.1 7-7 7h-2c-3.9 0-7-3.1-7-7V11c0-3.9 3.1-7 7-7Z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="contact-map">
+<!-- сюда вставь свою карту (например, iframe Яндекс или Google) -->
+<iframe loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample&amp;source=constructor"></iframe>
+</div>
+</div>
+</section>
+<footer class="footer">
+    © LatteGarden, 2025. Уютная кофейня в Хабаровске
+  </footer>
+<script src="script.js"></script>
+
+<div aria-hidden="true" class="product-modal" id="productModal">
+<div class="product-modal__backdrop" data-close=""></div>
+<div aria-labelledby="productModalTitle" aria-modal="true" class="product-modal__dialog" role="dialog">
+<button aria-label="Закрыть" class="product-modal__close" data-close="" type="button">×</button>
+<div class="product-modal__content">
+<div class="product-modal__media">
+<img alt="" id="productModalImg" src=""/>
+</div>
+<div class="product-modal__body">
+<div class="product-modal__head">
+<h3 id="productModalTitle"></h3>
+<div class="product-modal__price">
+<span id="productModalPrice">0 ₽</span>
+</div>
+</div>
+<p class="product-modal__desc" id="productModalDesc"></p>
+<div class="product-modal__meta">
+<div class="product-modal__meta-row" id="productModalIngredientsRow">
+<span class="label">Состав</span>
+<span class="value" id="productModalIngredients"></span>
+</div>
+<div class="product-modal__meta-row" id="productModalCaloriesRow">
+<span class="label">Калорийность</span>
+<span class="value" id="productModalCalories"></span>
+</div>
+</div>
+<div class="product-modal__options" id="productModalOptions">
+<div class="option-block" id="productModalSizeBlock">
+<div class="option-title">Размер</div>
+<div class="segmented" id="productModalSizes">
+<button class="seg active" data-size="S" type="button">S</button>
+<button class="seg" data-size="M" type="button">M</button>
+<button class="seg" data-size="L" type="button">L</button>
+</div>
+</div>
+<div class="option-block" id="productModalMilkBlock">
+<div class="option-title">Молоко</div>
+<div class="chips" id="productModalMilks">
+<button class="chip active" data-milk="regular" type="button">обычное</button>
+<button class="chip" data-milk="oat" type="button">овсяное</button>
+<button class="chip" data-milk="almond" type="button">миндальное</button>
+<button class="chip" data-milk="coconut" type="button">кокосовое</button>
+</div>
+</div>
+</div>
+<div class="product-modal__actions">
+<button class="order-btn-v2 product-modal__add" id="productModalAdd" type="button">
+            Добавить в корзину
+          </button>
+</div>
+<div aria-live="polite" class="product-modal__hint" id="productModalHint"></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
